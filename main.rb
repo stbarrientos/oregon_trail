@@ -1,10 +1,4 @@
-fuel = 0
-food = 0
-bandages = 0
-health = 100
-ammo = 0
+require_relative 'level_one.rb'
 
-puts "Do you want to go hunting?"
-answer = gets.chomp
-puts "You answered #{answer}"
-
+my_game = Game.new
+level1 = LevelOne.new.start
